@@ -8,13 +8,11 @@ urlpatterns =[
     path("home",views.index,name = 'home'),
     path("AboutUS",views.AboutUS,name = 'AboutUS'),
     path("ContactUS",views.ContactUS,name = 'ContactUS'),
-
     path("Player",views.Player,name = 'Player'),
-    path("Coach",views.Coach,name = 'Coach'),
     path("PlayerReg",views.PlayerReg,name = 'PlayerReg'),
     path("MySquad",views.MySquad,name = 'MySquad'),
     path("TermsOfService",views.TermsOfService,name = 'TermsOfService'),
-    path("PlayerProfile",views.PlayerProfile,name = 'PlayerProfile'),
+    path("MyProfile",views.MyProfile,name = 'MyProfile'),
     path("logout",views.LogoutPage,name = 'logout'),
 
 

@@ -40,7 +40,7 @@ def Player(request):
         if user is not None:
             login(request,user)
             
-            return redirect('PlayerProfile')
+            return redirect('MyProfile')
         
         else:
             messages.warning(request, 'Username or Password is incorrect')
@@ -80,13 +80,13 @@ def TermsOfService(request):
 
 @login_required(login_url='Player')
 
-def PlayerProfile(request):
+def MyProfile(request):
    user = request.user
    context = {
                "uname": user.username,
                "email" : user.email,
             }
-   return render (request,"PlayerProfile.html",context)
+   return render (request,"MyProfile.html",context)
 
 def ChangePass(request):
    return render (request,"ChangePass.html")
