@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}My Home Page {% endblock title %}
+
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+  html,
+  body,
+  .intro {
+    height: 100%;
+  }
+
+  .mask-custom {
+    background: rgba(24, 24, 16, .2);
+    border-radius: 2em;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  }
+    </style>
+</head>
+<body>
+  <div>
+    
+  </div>
+        <br><br>
+    
+        <section class="intro">
+            <div class="bg-image h-100" style="
+                    background-image: url(/static/football.jpeg);
+                  ">
+              <div class="mask d-flex align-items-center h-100" style="background-color: rgba(61, 195, 61, 0.1);">
+                <div class="container">
+                  <div class="card mask-custom p-4">
+                    <div class="card-body">
+                      <p class="h1 font-weight-bold mb-4 text-white" style="text-align: center;">Search Your Player</p>
+                      <div class="row justify-content-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                          
+
+                           <!-- player search bar -->
+                          <form action="/Prediction" method="get">
+                            <div id="basic" class="form-outline form-white">
+                              <input type="search" class="form-control form-control-lg" id="search" name="search"/> <br>
+                              <button class="btn btn-success" type="submit" >Seach</button>
+                            </div>
+                          </form>
+
+                        </div>           
+                      </div>
+                    </div>                 
+                  </div>          
+                </div>             
+              </div>
+
+              
+
+
+            </div>
+          </section>
+    
+    
+    <script>
+        const basicAutocomplete = document.querySelector('#basic');
+        const data = ['Museum', 'Party', 'Restaurant', 'Concert', 'Architecture'];
+        const dataFilter = (value) => {
+          return data.filter((item) => {
+            return item.toLowerCase().startsWith(value.toLowerCase());
+          });
+        };
+
+        new mdb.Autocomplete(basicAutocomplete, {
+          filter: dataFilter
+        });
+
+        const locationAutocomplete = document.querySelector('#location');
+        const dataL = ['Madrid', 'Rome', 'Lisbon', 'Paris', 'London'];
+        const dataFilterL = (value) => {
+          return dataL.filter((item) => {
+            return item.toLowerCase().startsWith(value.toLowerCase());
+          });
+        };
+
+        new mdb.Autocomplete(locationAutocomplete, {
+          filter: dataFilterL
+        });
+    </script>
+</body>
+</html>
+
+{% endblock body %}

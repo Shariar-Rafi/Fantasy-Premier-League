@@ -70,8 +70,14 @@ def PlayerReg(request):
    return render(request, "PlayerReg.html")
 
 
-def MySquad(request):
-   return render (request,"MySquad.html")
+def MyHomePage(request):
+   return render (request,"MyHomePage.html")
+
+def Prediction(request):
+   return render (request,"Prediction.html")
+
+
+
 
 def TermsOfService(request):
    return render (request,"TermsOfService.html")

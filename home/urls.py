@@ -10,10 +10,12 @@ urlpatterns =[
     path("ContactUS",views.ContactUS,name = 'ContactUS'),
     path("Player",views.Player,name = 'Player'),
     path("PlayerReg",views.PlayerReg,name = 'PlayerReg'),
-    path("MySquad",views.MySquad,name = 'MySquad'),
+    path("MyHomePage",views.MyHomePage,name = 'MyHomePage'),
     path("TermsOfService",views.TermsOfService,name = 'TermsOfService'),
     path("MyProfile",views.MyProfile,name = 'MyProfile'),
     path("logout",views.LogoutPage,name = 'logout'),
+    path("Prediction",views.Prediction,name = 'Prediction'),
+    
 
 
 path(
