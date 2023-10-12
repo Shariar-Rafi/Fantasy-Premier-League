@@ -60,7 +60,7 @@ def PlayerReg(request):
         email = request.POST.get('email')
         pass1 = request.POST.get('pass1')
         pass2 = request.POST.get('pass2')
-
+        
         if pass1!= pass2:
             messages.warning(request, "Both passwords didn't match, please try again!")
         else:
