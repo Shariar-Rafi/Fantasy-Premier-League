@@ -8347,98 +8347,102 @@ textarea.form-control {
 </style>
 </head>
 <body>
-		<section class="ftco-section">
-		<div class="container">
-		<div class="row justify-content-center">
-		<div class="col-md-6 text-center mb-5">
-		</div>
-		</div>
-		<div class="row justify-content-center">
-		<div class="col-md-10">
-		<div class="wrapper">
-		<div class="row no-gutters">
-		<div class="col-md-6">
-		<div class="contact-wrap w-100 p-lg-5 p-4">
-		<h3 class="mb-4">Send us a message</h3>
-		<div id="form-message-warning" class="mb-4"></div>
-		<div id="form-message-success" class="mb-4">
-		Your message was sent, thank you!
-		</div>
-		<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="/ContactUS">
-			{% csrf_token %}
-			<div class="row">
-			<div class="col-md-12">
-			<div class="form-group">
-        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
-			</div>
-			</div>
-			<div class="col-md-12">
-			<div class="form-group">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
-			</div>
-			</div>
-			<div class="col-md-12">
-			<div class="form-group">
-        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-			</div>
-			</div>
-			<div class="col-md-12">
-			<div class="form-group">
-        <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
-			</div>
-			</div>
-			<div class="col-md-12">
-			<div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
-			</div>
-			</div>
-			</div>
-		</form>
-		</div>
-		</div>
-		<div class="col-md-6 d-flex align-items-stretch">
-		<div class="info-wrap w-100 p-lg-5 p-4 img">
-		<h3>Contact us</h3>
-		<div class="dbox w-100 d-flex align-items-start">
-		<div class="icon d-flex align-items-center justify-content-center">
-		<span class="fa fa-map-marker"></span>
-		</div>
-		<div class="text pl-3">
-		<p><span>Address:</span> 74/A Green Rd, Dhaka 1205</p>
-		</div>
-		</div>
-		<div class="dbox w-100 d-flex align-items-center">
-		<div class="icon d-flex align-items-center justify-content-center">
-		<span class="fa fa-phone"></span>
-		</div>
-		<div class="text pl-3">
-		<p><span>Phone:</span> + 1235 2355 98</p>
-		</div>
-		</div>
-		<div class="dbox w-100 d-flex align-items-center">
-		<div class="icon d-flex align-items-center justify-content-center">
-		<span class="fa fa-paper-plane"></span>
-		</div>
-		<div class="text pl-3">
-		<p><span>Email:</span> <span class="__cf_email__" data-cfemail="b6dfd8d0d9f6cfd9c3c4c5dfc2d398d5d9db">fpl@gmail.com</span></p>
-		</div>
-		</div>
-		<div class="dbox w-100 d-flex align-items-center">
-		<div class="icon d-flex align-items-center justify-content-center">
-		<span class="fa fa-globe"></span>
-		</div>
-		<div class="text pl-3">
-		<p> <a href="https://fantasy.premierleague.com/"><span>Website: </span>https://fantasy.premierleague.com/</a></p>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
-		</section>
+
+
+	<div class="container">
+    <section class="ftco-section">
+      <div class="container">
+      <div class="row justify-content-center">
+      <div class="col-md-6 text-center mb-5">
+      </div>
+      </div>
+      <div class="row justify-content-center">
+      <div class="col-md-10">
+      <div class="wrapper">
+      <div class="row no-gutters">
+      <div class="col-md-6">
+      <div class="contact-wrap w-100 p-lg-5 p-4">
+      <h3 class="mb-4">Send us a message</h3>
+      <div id="form-message-warning" class="mb-4"></div>
+      <div id="form-message-success" class="mb-4">
+      Your message was sent, thank you!
+      </div>
+      <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="/ContactUS">
+        {% csrf_token %}
+        <div class="row">
+        <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+          <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </div>
+        </div>
+      </form>
+      </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-stretch">
+      <div class="info-wrap w-100 p-lg-5 p-4 img">
+      <h3>Contact us</h3>
+      <div class="dbox w-100 d-flex align-items-start">
+      <div class="icon d-flex align-items-center justify-content-center">
+      <span class="fa fa-map-marker"></span>
+      </div>
+      <div class="text pl-3">
+      <p><span>Address:</span> 74/A Green Rd, Dhaka 1205</p>
+      </div>
+      </div>
+      <div class="dbox w-100 d-flex align-items-center">
+      <div class="icon d-flex align-items-center justify-content-center">
+      <span class="fa fa-phone"></span>
+      </div>
+      <div class="text pl-3">
+      <p><span>Phone:</span> + 1235 2355 98</p>
+      </div>
+      </div>
+      <div class="dbox w-100 d-flex align-items-center">
+      <div class="icon d-flex align-items-center justify-content-center">
+      <span class="fa fa-paper-plane"></span>
+      </div>
+      <div class="text pl-3">
+      <p><span>Email:</span> <span class="__cf_email__" data-cfemail="b6dfd8d0d9f6cfd9c3c4c5dfc2d398d5d9db">fpl@gmail.com</span></p>
+      </div>
+      </div>
+      <div class="dbox w-100 d-flex align-items-center">
+      <div class="icon d-flex align-items-center justify-content-center">
+      <span class="fa fa-globe"></span>
+      </div>
+      <div class="text pl-3">
+      <p> <a href="https://fantasy.premierleague.com/"><span>Website: </span>https://fantasy.premierleague.com/</a></p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+  </div>
 		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
 		<script src="js/popper.js"></script>
 		<script src="js/bootstrap.min.js"></script>
