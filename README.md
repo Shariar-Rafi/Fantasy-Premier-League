@@ -5,5 +5,5 @@ managers got points. Week by week, Month by month, and season by season
 manager got rewards.
 
 <img src="https://github.com/Shariar-Rafi/Fantasy-Premier-League/blob/main/static/ss1.png" alt="Home_Page" width="800" height="1100">
-<img src="https://github.com/Shariar-Rafi/Fantasy-Premier-League/blob/main/static/ss3.png" alt="Prediction_Page" width="900" height="600">
+<img src="https://github.com/Shariar-Rafi/Fantasy-Premier-League/blob/main/static/ss3.png" alt="Prediction_Page" width="700" height="600">
 
