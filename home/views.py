@@ -7,9 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 import random
-
-# Create your views here. :(
-
+# Create your views here.
 def index(request):
    return render (request,"index.html")
 
@@ -26,10 +24,6 @@ def ContactUS(request):
       ContactUS.save()
       messages.success(request,'Your message has been sent! Thank you.')
    return render(request,"ContactUS.html")
-
-
-
-
 
 
 def Player(request):
