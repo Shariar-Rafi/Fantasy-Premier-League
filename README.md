@@ -4,4 +4,4 @@ the world. Managers/Users choose their players and according to their performanc
 managers got points. Week by week, Month by month, and season by season
 manager got rewards.
 
-<img src="https://github.com/Shariar-Rafi/Fantasy-Premier-League/blob/main/static/ss1.png" alt="Home_Page" width="1000" height="600">
+<img src="https://github.com/Shariar-Rafi/Fantasy-Premier-League/blob/main/static/ss1.png" alt="Home_Page" width="1000" height="1000">
