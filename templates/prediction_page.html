@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Prediction</title>
+</head>
+<body>
+    <h1>Generate Prediction</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="input_string">Input a String:</label>
+        <input type="text" name="input_string" id="input_string" required>
+        <button type="submit">Generate Prediction</button>
+    </form>
+    
+    {% if prediction %}
+    <h2>Prediction:</h2>
+    <p>{{ prediction }}%</p>
+    {% endif %}
+</body>
+</html>
