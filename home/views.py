@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
+import random
 
 # Create your views here. :(
 
@@ -70,15 +71,6 @@ def PlayerReg(request):
    return render(request, "PlayerReg.html")
 
 
-def MyHomePage(request):
-   return render (request,"MyHomePage.html")
-
-def Prediction(request):
-   return render (request,"Prediction.html")
-
-
-
-
 def TermsOfService(request):
    return render (request,"TermsOfService.html")
 
@@ -96,6 +88,10 @@ def MyProfile(request):
 
 def ChangePass(request):
    return render (request,"ChangePass.html")
+
+
+
+
 
 
 

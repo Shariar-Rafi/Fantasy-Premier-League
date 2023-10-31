@@ -17,7 +17,7 @@ def generate_prediction(request):
         input_string = request.POST.get('input_string')
         if input_string:
             # You can use the input_string to calculate a random percentage
-            prediction = random.uniform(0, 100)
+            prediction = random.uniform(1, 10)
 
     return render(request, 'prediction_page.html', {'prediction': prediction})
 
